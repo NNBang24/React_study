@@ -3,7 +3,7 @@ import "../css/Product.css"
 const ProductListComponent = (({ product }) => {
     return (
         <>
-            <h1 className="h1">SHOPPING NNB</h1>
+            {/* <h1 className="h1">SHOPPING NNB</h1> */}
             <div className="product-grid">
                 {product.map((item) => (
                     <div key={item.id} className="product-card">

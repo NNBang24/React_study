@@ -50,11 +50,13 @@ function App() {
     },
   ]
   return (
-    <>
+    <><h1 className="h1">Profile NNB</h1>
       <UserProfileComponent user ={UserData}/>
       <br />
+      <h1 className="h1">Count NNB</h1>
       <CountComponent/>
       <br />
+      <h1 className="h1">SHOPPING NNB</h1>
       <ProductListComponent product={productsList}/>
     </>
   )

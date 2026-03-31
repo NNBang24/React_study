@@ -5,12 +5,12 @@ function CountComponent({ }) {
 
     const handleIncrease = () => {
         setCount((pre) => {
-            return pre + 1
+            return pre + 1 ;
         })
     }
     const handleDecrease = () => {
         setCount((pre) => {
-            return pre - 1
+            return pre - 1 ;
         })
     }
     return (
@@ -28,5 +28,4 @@ function CountComponent({ }) {
         </>
     )
 }
-
 export default CountComponent
