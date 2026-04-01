@@ -1,4 +1,4 @@
-import '../css/Count.css'
+    import '../css/Count.css'
 import React ,{useState} from 'react'
 function CountComponent({ }) {
     const [count, setCount] = useState(0);

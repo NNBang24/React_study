@@ -3,117 +3,65 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
-
+import UserProfileComponent from './component/ProfileComponent'
+import avatar from './assets/t_shirt8.jpeg'
+import tShirt1 from './assets/t_shirt1.jpeg'
+import tShirt2 from './assets/t_shirt2.jpeg'
+import tShirt3 from './assets/t_shirt3.jpeg'
+import tShirt4 from './assets/t_shirt4.jpeg'
+import CountComponent from './component/CountComponent'
+import ProductListComponent from './component/ProductComponent'
+import FormComponent from './component/FormComponent'
 function App() {
-  const [count, setCount] = useState(0)
-
+  const UserData = {
+    fullname : "Nguyen Nhat Bang" ,
+    img: avatar ,
+    title: "Backend Developer Intern" ,
+    bio: "Sinh viên năm cuối ngành IT tại UTH. Đam mê xây dựng hệ thống backend hiệu suất cao và tìm hiểu về kiến trúc microservices." ,
+    skills: ["Node.js", "Express", "MySQL","ReactJs", "RESTful API"] 
+  }
+  const productsList = [
+    {
+      id : 1 ,
+      name : "T SHIRT 1" ,
+      img: tShirt1 ,
+      price : "230.000" ,
+      desc : "Ao mau den"
+    },
+    {
+      id: 2,
+      name: "T SHIRT 2",
+      img: tShirt2,
+      price: "230.000",
+      desc: "Ao mau trang"
+    },
+    {
+      id: 3,
+      name: "T SHIRT 3",
+      img: tShirt3,
+      price: "240.000",
+      desc: "Ao mau hong"
+    },
+    {
+      id: 4,
+      name: "T SHIRT 4",
+      img: tShirt4,
+      price: "230.000",
+      desc: "Ao mau do"
+    },
+  ]
   return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
-
-      <div className="ticks"></div>
-
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <div className="ticks"></div>
-      <section id="spacer"></section>
+    <><h1 className="h1">Profile NNB</h1>
+      <UserProfileComponent user ={UserData}/>
+      <br />
+      <h1 className="h1">Count NNB</h1>
+      <CountComponent/>
+      <br />
+      <h1 className="h1">SHOPPING NNB</h1>
+      <ProductListComponent product={productsList}/>
+      <br />
+      <h1 className="h1">Form NNB</h1>
+      <FormComponent/>
     </>
   )
 }
