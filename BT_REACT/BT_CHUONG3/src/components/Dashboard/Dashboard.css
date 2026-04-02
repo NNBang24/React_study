@@ -1,0 +1,76 @@
+.div-statistical{
+    padding: 10px ;
+    border: 1px solid;
+    width: 200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.div-container .loading{
+    margin: 0 auto;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.div-container {
+    width: 1000px;
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 100px;
+}
+.div-container h1 {
+    margin: 0 auto;
+}
+
+.div-statistical h2 {
+    margin: 0 auto;
+    color: brown;
+}
+
+.div-statistical p {
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+    display: flex;
+    gap: 10px;
+}
+.div-statistical b {
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(177, 212, 49);
+}
+.td-btn {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.td-btn button {
+    padding: 5px 20px;
+    font-size: 15px;
+}
+.btn-edit {
+    background-color: rgb(253, 253, 6);
+    border: none;
+    border-radius: 10px;
+}
+.btn-delete {
+    background-color: rgb(243, 64, 9);
+        border: none;
+        border-radius: 10px;
+}
+.btn-edit:hover {
+    opacity: 0.7;
+}
+.btn-edit:active {
+    opacity: 1;
+}
+.btn-delete:hover {
+    opacity: 0.7;
+}
+
+.btn-delete:active {
+    opacity: 1;
+}

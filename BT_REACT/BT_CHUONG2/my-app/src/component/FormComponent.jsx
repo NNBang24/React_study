@@ -11,7 +11,7 @@ function FormComponent() {
     const handleChange = (e) => {
         setForm({
             ...form,
-            [e.target.name]: [e.target.value]
+            [e.target.name]: e.target.value
         })
     }
     const handleSubmit = (e) => {

@@ -1,0 +1,11 @@
+.div-Product-List {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+    padding: 20px;
+    width: 1000px;
+    margin: 0 auto;
+    justify-items: center;
+    border: 2px solid;
+    margin-bottom: 100px;
+}
