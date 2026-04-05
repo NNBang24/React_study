@@ -1,0 +1,13 @@
+nav a {
+    margin-right: 15px;
+    /* text-decoration: none; */
+    font-weight: 600;
+}
+
+
+nav a.active {
+    font-weight: bold;
+    text-decoration: underline;
+    color: rgb(233, 110, 9);
+    font-weight: 600;
+}
