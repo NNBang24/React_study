@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 import './App.css'
 import Home from './screens/Home/Home'
 import Header from './components/Header/Header'
@@ -25,7 +25,7 @@ function App() {
             <Route path='/jobs/:id' element={<JobDetail />} />
 
             {/* redirect */}
-            {/* <Route path="/careers" element={<Navigate to="/jobs" />} /> */}
+            <Route path="/careers" element={<Navigate to="/jobs" />} />
 
             <Route path='/admin' element={<Admin />}>
               <Route path='jobs' element={<JobManager />} />

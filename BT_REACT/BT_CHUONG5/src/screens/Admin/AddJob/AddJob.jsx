@@ -18,7 +18,10 @@ function AddJob() {
             company : company ,
             description : description
         }
+        console.log("New Job:", newJob);  
+        console.log("Jobs trước:", jobs); 
         setJobs([...jobs ,newJob ]) ;
+        console.log("Jobs sau:", [...jobs, newJob]); 
         navigate('/admin/jobs')
     }
 

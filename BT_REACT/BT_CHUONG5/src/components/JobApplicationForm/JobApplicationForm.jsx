@@ -15,7 +15,7 @@ function JobApplicationForm () {
             { jobId: id, name, email }
         ]);
 
-        alert("Application submitted successfully!");
+        alert("Application submitted successfully!");S
         navigate("/jobs");
     };
     return (
